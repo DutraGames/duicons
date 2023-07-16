@@ -1,0 +1,15 @@
+{
+    "typescript": true,
+    "removeViewBox": false,
+    "replaceAttrValues": {
+      "white": "{color}",
+      "#FFFFFF": "{color}",
+      "black": "{color}",
+      "#111111": "{color}",
+      "#000": "{color}"
+    },
+    "svgProps": {
+      "width": "{size}",
+      "height": "{size}"
+    }
+  }
