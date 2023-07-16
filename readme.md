@@ -15,7 +15,7 @@ npm i ducons
 ## Usage
 
 ```tsx
-import {} from 'ducons';
+import {AddOutline} from 'ducons';
 
 export default function IconExample() {
 
