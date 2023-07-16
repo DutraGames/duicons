@@ -1,0 +1,37 @@
+{
+  "name": "ducons",
+  "version": "0.1.0",
+  "description": "SVG icon library for React",
+  "keywords": [
+    "react",
+    "icons",
+    "svg",
+    "ducons"
+  ],
+  "module": "dist/esm/index.esm.js",
+  "main": "dist/cjs/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clear": "rimraf src/components && rimraf dist",
+    "build": "rollup -c",
+    "svgr": "svgr --icon --typescript -d src/components src/icons --config-file svgr-config.json --template svg-template.js",
+    "prebuild": "npm run clear && npm run svgr"
+  },
+  "author": "Gabriel Dutra",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@svgr/cli": "^8.0.1",
+    "@types/react": "^18.2.15",
+    "react": "^18.2.0",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.26.2",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-filesize": "^10.0.0",
+    "typescript": "^5.1.6"
+  }
+}
