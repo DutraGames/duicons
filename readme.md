@@ -23,5 +23,17 @@ return (
         <AddOutline/>
     )
 }
-
 ```
+
+You can configure Icons with inline props:
+
+```tsx
+<AddOutline color="#eafe23" size={40}/>
+```
+
+## Props
+
+|Props|Type|Default|Note|
+|---|---|---|---|
+|`size`|`string` or `number`|`32px`|size={32} or size="32"|
+|`color`|`string`|`#000`|css color|
