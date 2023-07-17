@@ -1,12 +1,12 @@
 {
-  "name": "ducons",
+  "name": "duicons",
   "version": "0.0.1-beta.1",
   "description": "SVG icon library for React",
   "keywords": [
     "react",
     "icons",
     "svg",
-    "ducons",
+    "duicons",
     "icon component"
   ],
   "module": "dist/esm/index.esm.js",
@@ -16,18 +16,18 @@
     "dist"
   ],
   "scripts": {
-    "clear": "rimraf src/components && rimraf dist",
-    "build": "rollup -c",
-    "svgr": "svgr --icon --typescript -d src/components src/icons --config-file svgr-config.json --template svg-template.js",
-    "prebuild": "npm run clear && npm run svgr"
+    "gen": "svgr --icon --typescript -d src/components src/icons --config-file svgr-config.json --template svg-template.js",
+    "prebuild": "rimraf src/components && rimraf dist",
+    "build:bundle": "npm run gen && rollup -c",
+    "build": "npm run prebuild && npm run build:bundle"
   },
   "author": "Gabriel Dutra",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dutragames/ducons"
+    "url": "https://github.com/dutragames/duicons"
   },
   "bugs": {
-    "url": "https://github.com/dutragames/ducons/issues"
+    "url": "https://github.com/dutragames/duicons/issues"
   },
   "publishConfig": {
     "access": "public"

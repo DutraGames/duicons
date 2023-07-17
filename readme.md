@@ -1,6 +1,6 @@
-# **Ducons**
+# **Duicons**
 
-Ducons Icon Library for React in Production **OPEN SORCE**
+Duicons Icon Library for React in Production **OPEN SORCE**
 
 >>## **NOTICE!**
 >
@@ -9,13 +9,13 @@ Ducons Icon Library for React in Production **OPEN SORCE**
 ## How Install
 
 ```cmd
-npm i ducons
+npm i duicons
 ```
 
 ## Usage
 
 ```tsx
-import {AddOutline} from 'ducons';
+import {AddOutline} from 'duicons';
 
 export default function IconExample() {
 
