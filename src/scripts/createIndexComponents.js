@@ -4,7 +4,7 @@ const fs = require('fs');
 const pathRoot = path.resolve();
 const pathFiles = path.join(pathRoot, 'src', 'components');
 
-const createIndexComponents = () => {
+const createIndexComponents = async() => {
   const files = fs.readdirSync(pathFiles);
   let content = '';
 

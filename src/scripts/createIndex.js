@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 
-const createIndex = () => {
+const createIndex = async() => {
 
     const content = 'export * as default from "./components";';
     const filePath = path.join(path.resolve(), 'src', 'index.ts');

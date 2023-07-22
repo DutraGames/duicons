@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const deleteIndex = () => {
+const deleteIndex = async() => {
 
     const filePath = path.join(path.resolve(), 'src', 'index.ts');
 
