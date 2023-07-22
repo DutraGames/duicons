@@ -5,7 +5,7 @@ import filesize from 'rollup-plugin-filesize';
 
 export default [
   {
-    input: 'src/components/index.ts',
+    input: 'src/index.ts',
     output: [
       {
         file: 'dist/cjs/index.js',
@@ -25,7 +25,7 @@ export default [
     ],
   },
   {
-    input: 'dist/esm/types/components/index.d.ts',
+    input: 'dist/esm/types/index.d.ts',
     output: [{ file: 'dist/types/index.d.ts', format: 'esm' }],
     plugins: [
       dts()
