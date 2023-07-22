@@ -3,7 +3,7 @@ const path = require('path');
 
 const deleteIndex = () => {
 
-    const filePath = path.join(__dirname, '../', 'index.ts');
+    const filePath = path.join(path.resolve(), 'src', 'index.ts');
 
     fs.unlink(filePath, (err) => {
         if (err) return console.error('Error in deleting index.ts:', err);
@@ -12,3 +12,5 @@ const deleteIndex = () => {
     }
     );
 }
+
+module.exports = deleteIndex;
