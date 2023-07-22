@@ -1,6 +1,8 @@
 # **Duicons**
 
-Duicons Icon Library for React in Production **OPEN SORCE**
+Duicons Icon Library for React in Production.
+
+![duicons](https://img.shields.io/npm/v/duicons?color=red)
 
 >>## **NOTICE!**
 >
