@@ -1,6 +1,6 @@
 {
   "name": "duicons",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.1.1",
   "description": "SVG icon library for React",
   "keywords": [
     "react",
@@ -16,10 +16,10 @@
     "dist"
   ],
   "scripts": {
-    "gen": "svgr --icon --typescript -d src/components src/icons --config-file svgr-config.json --template svg-template.js",
-    "prebuild": "rimraf src/components && rimraf dist",
-    "build:bundle": "npm run gen && rollup -c",
-    "build": "npm run prebuild && npm run build:bundle"
+    "gen": "find src/icons -name '*.svg' | xargs svgr --icon --typescript -d src/components --config-file svgr-config.json --template svg-template.js",
+    "prebuild": "rimraf src/components && rimraf dist && npm run gen",
+    "build:bundle": "rollup -c",
+    "build": "node src/scripts/build.js"
   },
   "author": "Gabriel Dutra",
   "repository": {
@@ -38,6 +38,7 @@
     "@rollup/plugin-typescript": "^11.1.2",
     "@svgr/cli": "^8.0.1",
     "@types/react": "^18.2.15",
+    "find": "^0.3.0",
     "react": "^18.2.0",
     "rimraf": "^5.0.1",
     "rollup": "^3.26.2",
