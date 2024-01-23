@@ -19,7 +19,7 @@
     "gen": "find src/icons -name '*.svg' | xargs svgr --icon --typescript -d src/components --config-file svgr-config.json --template svg-template.js",
     "prebuild": "rimraf src/components && rimraf dist && npm run gen",
     "build:bundle": "rollup -c",
-    "build": "node src/scripts/build.js"
+    "build": "tsx src/scripts/build.ts"
   },
   "author": "Gabriel Dutra",
   "repository": {
@@ -34,19 +34,23 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.3",
-    "@rollup/plugin-typescript": "^11.1.2",
-    "@svgr/cli": "^8.0.1",
-    "@types/react": "^18.2.15",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@svgr/cli": "^8.1.0",
+    "@types/react": "^18.2.48",
     "find": "^0.3.0",
     "react": "^18.2.0",
-    "rimraf": "^5.0.1",
-    "rollup": "^3.26.2",
-    "rollup-plugin-dts": "^5.3.0",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.9.6",
+    "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-filesize": "^10.0.0",
-    "typescript": "^5.1.6"
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
   },
   "peerDependencies": {
     "react": "*"
+  },
+  "dependencies": {
+    "@types/node": "^20.11.5"
   }
 }
