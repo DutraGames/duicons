@@ -1,8 +1,7 @@
 node_modules
 
-src/**/*.ts
+src/components/*.ts
 src/**/*.tsx
+src/*.ts
 
 dist
-
-*.txt
