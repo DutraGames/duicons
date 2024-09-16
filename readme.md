@@ -1,10 +1,9 @@
 # **Duicons**
 
-Duicons Icon Library for React.
-
 ![duicons](https://img.shields.io/npm/v/duicons?color=red)
-
 ![npm](https://img.shields.io/npm/dm/duicons)
+
+Duicons is a versatile icon component library for ReactJS, designed to provide a wide range of modern, customizable icons for web applications. With Duicons, developers can easily integrate scalable icons into their projects, allowing for seamless adaptation to various themes and sizes. The library offers optimized performance and a user-friendly API, making it ideal for both small and large-scale applications.
 
 ## How Install
 
