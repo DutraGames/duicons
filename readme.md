@@ -1,14 +1,10 @@
 # **Duicons**
 
-Duicons Icon Library for React in Production.
+Duicons Icon Library for React.
 
 ![duicons](https://img.shields.io/npm/v/duicons?color=red)
 
 ![npm](https://img.shields.io/npm/dm/duicons)
-
-## **WARN!**
-
-> The library is currently under development and undergoing testing, but if you wish to try it out in your project with the limited icons available at the moment.
 
 ## How Install
 
